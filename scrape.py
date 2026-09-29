@@ -34,6 +34,10 @@ ESPN_HEADERS = {
 }
 
 
+# Method adapted from @andr3w321 via https://github.com/andr3w321/espn_scraper
+# Made adjustments to request headers, site url, fixed_get_season_start_end_datetimes_helper, and get_nba_playbyplay
+# to fix errors with the original code
+
 def my_retry_request(url, headers=None):
     print("REQUESTING:", url)
 
